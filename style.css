@@ -1,0 +1,171 @@
+body{
+    background-color: pink;
+    display: grid;
+    grid-template-rows: 300px 300px 200px 100px;
+}
+.heading h1{
+    text-align: center;
+    font-size: 70px;
+    color: rgb(145, 13, 81);
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.luck{
+    font-family: cursive;
+}
+.heading p{
+    text-align: center;
+    font-size: 30px;
+    color: rgb(170, 11, 106);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+#game h4{
+    font-size: 50px;
+    font-family:cursive;
+}
+.title{
+    text-align: center;
+    font-size: 70px;
+    color: rgb(154, 16, 80);
+    grid-template-columns: 1fr;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    margin-bottom: 0;
+    padding-bottom: 0;
+    position:sticky;
+}
+.btn a{
+    text-decoration: none;
+    color: antiquewhite;
+    
+}
+.btn a:hover{
+    color: brown;
+}
+.face{
+    background-color: rgb(223, 49, 113);
+    width: 200px;
+    height: 200px;
+    border-radius: 10px;
+    border: 5px outset rgb(182, 9, 99);
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    box-shadow: 10px 10px 15px rgb(92, 2, 63);
+    
+}
+.dot{
+    width: 50px;
+    height: 50px;
+    border: inset rgb(219, 178, 16);
+    border-radius: 35px;
+    background-color: blanchedalmond;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    
+}
+
+.center{
+    grid-area: 2/ 2/ 3/ 3;
+}
+
+
+.top-left{
+    grid-area: 1/ 1/ 2/ 2;
+}
+
+.top-right{
+    grid-area: 1/ 3/ 2/ 4;
+    
+}
+
+.bottom-left{
+    grid-area: 3/1/4/2;
+}
+
+.bottom-right{
+    grid-area: 3/3/4/4;
+}
+
+.center-left{
+    grid-area: 2/1/3/2;
+}
+
+.center-right{
+    grid-area: 2/3/3/4;
+}
+
+.grid-container{
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 400px 400px;
+    gap: 10px;
+    
+    text-align: center;
+    font-size: 25px;
+    color: rgb(114, 2, 39);
+    margin-top: 0;
+    padding-top: 0;
+    
+}
+@media (max-width: 400px) {
+    .title{
+        font-size: 38px;
+    }
+    .grid-container{
+        grid-template-columns: 1fr;
+
+        grid-template-rows: 1fr 1fr;
+        justify-content: center;
+
+     
+        
+    }
+    .col-1, .col-2{
+        padding: 10px 160px;
+    }
+    
+}
+.button{
+    display: flex;
+    justify-content: center;
+    height: 200px;
+    
+}
+.btn{
+    width: 200px;
+    height: 70px;
+    font-size: 30px;
+    margin-top: 50px;
+    background-color: rgb(132, 19, 66);
+    color: antiquewhite;
+    border: outset 2px rgb(90, 4, 39);
+    border-radius: 50px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    
+
+}
+.play{
+    margin-right: 20px;
+}
+.reset{
+    margin-left: 20px;
+}
+.btn:hover{
+    background-color: rgb(249, 215, 215);
+    color: brown;
+    border: outset 2px rgb(246, 178, 205);
+
+}
+
+.col-1, .col-2{
+    padding: 0px 90px;
+    margin-top: 0;
+}
+
+#footer{
+    color: rgb(104, 98, 98);
+    bottom: 0;
+    text-align: center;
+    width: 100%;
+
+}
